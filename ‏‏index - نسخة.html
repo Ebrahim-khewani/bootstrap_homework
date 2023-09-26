@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  .row> div{
+    border: 2px
+
+    عند عمل علامة <اكبر منه معناه انه عند استخدام row
+    وبعدها div 
+    يتم استخدام الخصائص المكتوبة
+  }
+ -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>start bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mycss.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+  <script src="js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body class=".selector-for-some-widget w-100 h-100 m-1  flex-column justify-content-center align-content-md-center">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      Start bootstrap
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li>
+
+           
+           <button type="button" class="btn btn-outline-secondary btn-sm pt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+          </svg>
+            cart
+            <span class="bg-dark rounded-circle w-50 bg-primary text-white"> 0 </span>
+          </button>
+        </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="bg-dark modal-header fs-1 h-100">
+    <div class="link-light"> shope is style</div>
+    <div class="link-light"> shope in style</div>
+  </header>
+  <main class="list-group ">
+    <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4  shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal "></h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title pricing-card-title">Spishal item<small class="text-body-secondary fw-light">/mo</small></h6>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal"></h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title pricing-card-title">Spishal item<small class="text-body-secondary fw-light">/mo</small></h6>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email</li>
+            </ul>
+            <button type="button" class="w-100 btn  btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4  shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal"></h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title pricing-card-title">Spishal item<small class="text-body-secondary fw-light">/mo</small></h6>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email </li>
+            </ul>
+            <button type="button" class="w-100 btn  btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal"></h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title pricing-card-title">Spishal item<small class="text-body-secondary fw-light">/mo</small></h6>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email </li>
+            </ul>
+            <button type="button" class="w-100 btn btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark h-100 fs-1">
+    <span class="text-light fs-6">copy with<code class="text-light">@</code> ebrahim</span>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body{
+   
+       -webkit-text-size-adjust:100%;
+      text-size-adjust:100%;
+      
+    }
+
+.gold-rating-stars
+{
+      color: gold;
+}

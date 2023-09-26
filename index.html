@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  .row> div{
+    border: 2px
+
+    عند عمل علامة <اكبر منه معناه انه عند استخدام row
+    وبعدها div 
+    يتم استخدام الخصائص المكتوبة
+  }
+ -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>start bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mycss.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+  <script src="js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light p-0">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar scroll</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Link</a>
+            </li>
+          </ul>
+
+          <button class="btn btn-outline-dark ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+              </path>
+            </svg>
+            cart
+            <span class="bg-dark rounded-circle text-white p-sm-1 p-0"> 0 </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-dark center-div h-100 ">
+      <div class="text-white d-flex justify-content-center h1"> shope is style</div>
+      <div class=" text-muted d-flex justify-content-center fs-6"> shope in style</div>
+    </header>
+    <main class="list-group mt-5">
+      <div class="row row-cols-1 row-cols-md-3">        
+        <div class="col position-relative col-md-3">
+          <!-- <img src="" class="card-img-top" alt="..."> -->
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text class="text-light" x="50%" y="50%" fill="#dee2e6" dy=".3em ">450 * 300</text>
+          </svg>
+          <div class="card-body p-4 ">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              <span class="text-decoration-none"> $80.00 </span>  $40.00
+            </p>
+            <p class="card-text"> 
+              <span class="rating-stars m-0 gold-rating-stars">&nbsp</span>   
+             </p>
+            <a href="#" class="btn btn-outline-dark ">add to cart</a>
+          </div>
+        </div>
+        <div class="col position-relative col-md-3">
+          <!-- <img src="" class="card-img-top" alt="..."> -->
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text class="text-light" fill="#dee2e6"> 450 * 300</text>
+          </svg>
+          <div class="card-body p-4">
+            <span class="bg-dark text-white btn btn-sm p-sm-0  position-absolute top-0 end-0  me-3 mt-1 me-3 mt-1"> sale</span>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"> 
+              <span class="rating-stars m-0 gold-rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <p>  <span class="text-decoration-line-through"> $80.00 </span>  $40.00
+            </p>
+            <a href="#" class="btn btn-outline-dark">add to cart</a>
+          </div>
+        </div>
+        <div class="col position-relative col-md-3">
+          <!-- <img src="" class="card-img-top" alt="..."> -->
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text class="text-light" fill="#dee2e6"> 450 * 300</text>
+          </svg>
+          <div class="card-body p-4">
+            <span class="bg-dark text-white btn btn-sm p-sm-0  position-absolute top-0 end-0  me-3 mt-1 me-3 mt-1"> sale</span>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"> 
+              <span class="text-muted"> $80.00 </span>  $40.00
+            </p>
+            <p class="card-text"> 
+              <span class="rating-stars m-0 gold-rating-stars">&nbsp</span>   
+             </p>
+            <a href="#" class="btn btn-outline-dark">add to cart</a>
+          </div>
+        </div>        
+        
+        <div class="col position-relative col-md-3">
+          <!-- <img src="" class="card-img-top" alt="..."> -->
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text class="text-light" fill="#dee2e6"> 450 * 300</text>
+          </svg>
+          <div class="card-body p-4">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"> 
+              <span class="rating-stars m-0 gold-rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 
+              </p>
+             <p>   $40.00
+            </p>
+            <a href="#" class="btn btn-outline-dark">add to cart</a>
+          </div>
+        </div>
+        <div class="col position-relative col-md-3">
+          <!-- <img src="" class="card-img-top" alt="..."> -->
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text class="text-light" fill="#dee2e6"> 450 * 300</text>
+          </svg>
+          <div class="card-body p-4">
+            <span class="bg-dark text-white btn btn-sm p-sm-0  position-absolute top-0 end-0  me-3 mt-1"> sale</span>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"> 
+              <span class="text-muted"> $80.00 </span>  $40.00
+            </p>
+            <a href="#" class="btn btn-outline-dark">add to cart</a>
+          </div>
+        </div>        
+        <div class="col position-relative col-md-3">
+          <!-- <img src="" class="card-img-top" alt="..."> -->
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text class="text-light" x="50%" y="50%" fill="#dee2e6" dy=".3em ">450 * 300</text>
+          </svg>
+          <div class="card-body p-4 ">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              <span class="text-decoration-none"> $80.00 </span>  $40.00 
+            </p>
+            <p class="card-text"> 
+              <span class="rating-stars m-0 gold-rating-stars">&nbsp</span>   
+             </p>
+            <a href="#" class="btn btn-outline-dark ">add to cart</a>
+          </div>
+        </div>
+        <div class="col position-relative col-md-3">
+          <!-- <img src="" class="card-img-top" alt="..."> -->
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text class="text-light" fill="#dee2e6"> 450 * 300</text>
+          </svg>
+          <div class="card-body p-4">
+            <span class="bg-dark text-white btn btn-sm p-sm-0  position-absolute top-0 end-0 me-3 mt-1"> sale</span>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"> 
+              <span class="rating-stars m-0 gold-rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>   
+             </p>
+             <p> 
+              <span class="text-decoration-line-through"> $80.00 </span>  $40.00
+             </p>
+             <p class="card-text"> 
+              <span class="rating-stars m-0 gold-rating-stars">&nbsp</span>   
+             </p>
+            <a href="#" class="btn btn-outline-dark">add to cart</a>
+          </div>
+        </div>
+       
+        <div class="col position-relative col-md-3">
+          <!-- <img src="" class="card-img-top" alt="..."> -->
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text class="text-light" fill="#dee2e6"> 450 * 300</text>
+          </svg>
+          <div class="card-body p-4">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"> 
+              <span class="rating-stars m-0 gold-rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 
+                $40.00
+            </p>
+            <a href="#" class="btn btn-outline-dark">add to cart</a>
+          </div>
+        </div> 
+
+
+      </div>
+    </main>
+
+    <footer class="bg-dark ">
+      <span class="text-muted fs-6 d-flex justify-content-center p-3">copy with &copy ebrahim</span>
+    </footer>
+
+  </div>
+</body>
+
+</html>
