@@ -7,7 +7,7 @@ setTimeout(function() {
     document.getElementById("c-loading").style.display = "none";
     document.getElementById("loading").style.display = "none";  
     document.getElementById("app").style.display = "block";          
-}, 1000);
+}, 3000);
 
 }
 
