@@ -1,12 +1,16 @@
 
-
+if (document.title === 'start bootstrap')
+{
 document.getElementById("app").style.display = "none";
 
 setTimeout(function() {
     document.getElementById("c-loading").style.display = "none";
     document.getElementById("loading").style.display = "none";  
     document.getElementById("app").style.display = "block";          
-}, 10000);
+}, 1000);
+
+}
+
 
 
 const app = el("#app");
