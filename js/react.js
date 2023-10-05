@@ -281,7 +281,7 @@ const main = `
 
 const main_variable = `
 <main class="list-group mt-5">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 m-0">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 m-0 justify-content-center">
     ${keysSimpleproducts? keysSimpleproducts.map(element => `
     <div class="col position-relative p-0 border border-1">
       <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
