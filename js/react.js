@@ -34,6 +34,10 @@ const pagadd =  `
   <div class="row-md-4">
     <input type="text" class="form-control" id="productPrice" placeholder="price">
   </div>
+  <div class="input-group row-md-4">
+  <input type="file" class="form-control" id="inputfile" accept="image/png, image/jpeg">
+  <img src="#" class="d-none img-thumbnail" id="imgPictur" alt="..">
+</div>
 </div>
 <div class="row mt-3 mb-5 justify-content-center">
   <div class="row">
@@ -284,12 +288,7 @@ const main_variable = `
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 m-0 justify-content-center">
     ${keysSimpleproducts? keysSimpleproducts.map(element => `
     <div class="col position-relative p-0 border border-1">
-      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-        role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#868e96"></rect>
-        <text class="text-light" x="50%" y="50%" fill="#dee2e6" dy=".3em">450 * 300</text>
-      </svg>
+    <img src="${element.img}" class="img-thumbnail w-100" style="height: 200px" alt="...">
       <div class="align-content-center card-body d-flex flex-column justify-content-center p-4">
         <h5 class="card-title d-flex justify-content-center">${element.name}</h5>
         <p class="card-text">
@@ -312,7 +311,6 @@ const footer= `
 <span class="text-light d-flex justify-content-center p-3">copy with &copy ebrahim</span>
 </footer>
 `
-
 
 
 renderHtml(nav);
@@ -342,14 +340,17 @@ let productName = el('#productName');
  let productDtl = el('#productDtl');
  let productPrice = el('#productPrice');
  let addMessage = el("#AddMessage");
- if (productName.value)
-    {
 
-        const newProduct = {
+ if (productName.value)
+    {    
+   
+  const newProduct = {
             name: productName.value,
             dtl: productDtl.value,
             price: productPrice.value,
+            img:imgElement.src
             };
+
 
             productsData.push(newProduct);            
         // productsData = JSON.parse(localStorage.getItem("Simpleproducts")); 
@@ -386,6 +387,7 @@ let productName = el('#productName');
     el('#productName').value='';
     el('#productDtl').value='';
     el('#productPrice').value='';
+    el('#inputfile').value='';
     }
   });
 
@@ -393,25 +395,23 @@ let productName = el('#productName');
 
 renderHtml(footer);
 
-// var addproduct = document.getElementById('productName');
-// console.log(addproduct);
 
-// el("#btn-add-prodcut").addEventListener("click", (e) => {
-//          console.log("working");
-//        });
-       
-// addproduct.addEventListener('click', function(){ alert("Hello World!"); });
+ 
+fileBtn = el("#inputfile");
+imgElement = el('#imgPictur');
+fileBtn.addEventListener('change', (event)=>{
+// Get the selected file
+const file = event.target.files[0];
 
-// let productName = el('#productName');
-// let productDtl = el('#productDtl');
-// let productPrice = el('#productPrice');
-// setStorage("products", {name: productName.value,
-//                         dtl:productDtl.value,
-//                         dtl:productPrice.value}
+ if (file.type.includes("image") || file.type.includes("jpg")) {
+    openFile(file) 
+  }
+})
+var openFile = function (file) {
+  var reader = new FileReader();
+  reader.readAsDataURL(file);
 
-// );
-
-// el('#btn-add-prodcut').addEventListener('click',() => {
-//     console.log('hi')
-// })
-
+  reader.onload = function () {
+    imgElement.src = reader.result;
+  };
+};
